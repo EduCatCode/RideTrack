@@ -1,7 +1,7 @@
 # 環境建立
 - 方法1: 使用 Anaconda yml檔案建置
 ```bash =
-conda env create -f environment.yml
+conda env create -f RideTrack_environment.yml
 ```
 
 - 方法2: 使用 PyPI requirements建置
