@@ -113,7 +113,7 @@ class SensorFusion:
             df: The dataframe to be saved.
             path: The path to save the dataframe.
         """
-        df.to_csv(path)
+        df.to_csv(path, index=False)
 
     # 計算執行時間
     @staticmethod
@@ -836,7 +836,7 @@ class AutoTag:
             df: The dataframe to be saved.
             path: The path to save the dataframe.
         """
-        df.to_csv(path)
+        df.to_csv(path, index=False)
 
     # 計算執行時間
     @staticmethod
@@ -1099,7 +1099,7 @@ class DrivePSTs:
             df: The dataframe to be saved.
             path: The path to save the dataframe.
         """
-        df.to_csv(path)
+        df.to_csv(path, index=False)
 
     # 計算執行時間
     @staticmethod
@@ -1401,7 +1401,7 @@ class ComparisonTargets:
             df: The dataframe to be saved.
             path: The path to save the dataframe.
         """
-        df.to_csv(path)
+        df.to_csv(path, index=False)
 
     # 計算執行時間
     @staticmethod
@@ -1723,7 +1723,7 @@ class else_:
         DataSet[Category] = DataSet[Category].fillna(0)
 
         if Save:
-            DataSet.to_csv(f'Traditional_Threshold_{len(Quantiles)-1}^{len(Feature)}_groups.csv')
+            DataSet.to_csv(f'Traditional_Threshold_{len(Quantiles)-1}^{len(Feature)}_groups.csv', index=False)
         
         return DataSet
     
@@ -1743,7 +1743,7 @@ class else_:
         # DataSet['Action Element'] = DataSet['Action Element'].fillna(0)
 
         if Save:
-            DataSet.to_csv(f'Traditional_Threshold_{len(Quantiles_Value)-1}^{len(Feature)}_groups.csv')
+            DataSet.to_csv(f'Traditional_Threshold_{len(Quantiles_Value)-1}^{len(Feature)}_groups.csv', index=False)
         
         return DataSet
 
