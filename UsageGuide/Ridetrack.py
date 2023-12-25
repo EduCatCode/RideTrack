@@ -358,10 +358,10 @@ class SensorFusion:
         start_time = time.time()  # Start time
 
         ECU_Raw_Data = pd.read_csv(ecu_data_path)
-        ECU_Raw_Data = ECU_Raw_Data.drop('Unnamed: 0',axis=1)
+        #ECU_Raw_Data = ECU_Raw_Data.drop('Unnamed: 0',axis=1)
 
         Axis_Raw_Data = pd.read_csv(axis_data_path)
-        Axis_Raw_Data = Axis_Raw_Data.drop('Unnamed: 0',axis=1)
+        #Axis_Raw_Data = Axis_Raw_Data.drop('Unnamed: 0',axis=1)
 
     
         Merge_Data_No_Feature = ['No']
@@ -1326,7 +1326,7 @@ class DrivePSTs:
         sns.barplot(x='Action', y='Accuracy', data=result_df, ax=ax1, palette=palette)
 
         ax1.axhline(overall_accuracy, color='red', linestyle='--')
-        ax1.text(len(actions)-0.5, overall_accuracy + 1, f'整體準確度: {overall_accuracy:.2f}', color='black', ha='right', fontsize=16)
+        ax1.text(len(actions)-0.5, overall_accuracy + 1, f'Accuracy (Total): {overall_accuracy:.2f}', color='black', ha='right', fontsize=16)
 
         ax1.set_title('Accuracy analysis of different behaviors', fontsize=20, pad=12)
         ax1.set_xlabel('Behavior', fontsize=20, labelpad=10)
@@ -1506,7 +1506,7 @@ class ComparisonTargets:
 ################################################################################################################################
 
     # 參考Github:https://github.com/isukrit/encodingHumanActivity 
-    # 之前Jason家澤友幫忙跑過可以詢問他，他回想起來可能會比其他學弟直接摸索來的快
+    # 之前Jason家澤有幫忙跑過可以詢問他，他回想起來可能會比其他學弟直接摸索來的快
 
     def model(self, x_train, num_labels, LSTM_units, dropout, num_conv_filters, batch_size):
         """
@@ -1571,7 +1571,6 @@ class ComparisonTargets:
             'Recall': [],
             'F1': []
         }
-
 
 
         for i in range(0, len(folds)):
