@@ -7,7 +7,7 @@ WORKDIR /workspace
 # 將專案文件複製到工作目錄
 COPY . .
 
-# 創建並激活conda環境
+# 創建並開啟conda環境
 RUN conda create --name RideTrack python=3.7
 SHELL ["conda", "run", "-n", "RideTrack", "/bin/bash", "-c"]
 
