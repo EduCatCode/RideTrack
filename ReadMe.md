@@ -2,6 +2,8 @@
 
 ## 主要成就
 
+![napkin-selection (7)](https://hackmd.io/_uploads/ry3wvPhaC.png)
+
 在本專案中，我們開發了一套新穎且主動的機車駕駛行為追蹤系統RideTrack。此系統使用IMU（Inertial Measurement Unit）和ECU（Engine Control Unit）的感測數據來準確辨識駕駛行為，並有效保護駕駛隱私。以下是一些具體的量化成果：
 
 - **隱私保護**：系統完全不依賴影像資料或GPS數據，實現高效隱私保護。
