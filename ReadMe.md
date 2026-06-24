@@ -69,7 +69,7 @@ RideTrack系統主要包含以下模組：
 
 
 ## 開發團隊
-本系統由 **NCHU KDD 721** 團隊負責開發。
+本系統由 **NCHU KDD 721** 團隊負責開發 (主負責人：Wei-Liang, Yen)。
 
 ## API 介紹
 RideTrack系統主要包含以下模組：
